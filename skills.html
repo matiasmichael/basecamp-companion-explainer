@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — <!-- COMPANION_NAME --> · Basecamp</title>
+  <meta name="description" content="Reusable instruction sets — SOPs that actually get followed. Teach your companion once, executed perfectly every time.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture.html">How It Works</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="architecture.html">How It Works</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="projects.html">Projects</a>
+    <a href="guide.html">Guide</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-subtitle">📋 Skills System</div>
+      <h1>Teach Once, <span class="text-orange">Done Forever</span></h1>
+      <p>
+        Skills are reusable instruction sets — like SOPs, but ones that actually get followed. Teach your companion a workflow once, and it executes it perfectly every time.
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHAT ARE SKILLS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Are Skills?</h2>
+        <p>Think of skills as recipes your companion can follow — step-by-step instructions stored as files, recalled and executed on demand.</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="card animate-in mb-24">
+            <div class="card-icon">📄</div>
+            <h3>Skill Files</h3>
+            <p>Each skill is a markdown file in the companion's workspace. It contains clear instructions: what to do, in what order, with what tools, and what the output should look like.</p>
+          </div>
+          <div class="card animate-in">
+            <div class="card-icon gold">🎯</div>
+            <h3>Not Suggestions — Procedures</h3>
+            <p>Unlike "prompts" or "templates," skills are <strong>executed</strong>. The companion doesn't suggest what to do — it does it, following the skill file step by step.</p>
+          </div>
+        </div>
+        <div>
+          <div class="code-block">
+            <span class="code-comment"># skill-morning-briefing.md</span><br><br>
+            <span class="code-key">## Morning Briefing Skill</span><br><br>
+            <span class="code-key">### Steps:</span><br>
+            <span class="code-string">1. Check calendar for today's events</span><br>
+            <span class="code-string">2. Search web for relevant industry news</span><br>
+            <span class="code-string">3. Review pending tasks from MEMORY.md</span><br>
+            <span class="code-string">4. Check GitHub for overnight PRs</span><br>
+            <span class="code-string">5. Compile into briefing format</span><br><br>
+            <span class="code-key">### Format:</span><br>
+            <span class="code-string">- Max 5 news items</span><br>
+            <span class="code-string">- Bullet points only</span><br>
+            <span class="code-string">- Include source links</span><br>
+            <span class="code-string">- Flag action items with ⚡</span><br><br>
+            <span class="code-key">### Deliver:</span><br>
+            <span class="code-string">- Send via Telegram at 6:30 AM</span><br>
+            <span class="code-accent">- Tone: concise, no fluff</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHY SKILLS MATTER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Skills Matter</h2>
+        <p>The difference between a useful companion and an indispensable one.</p>
+      </div>
+
+      <div class="card-grid cols-3">
+        <div class="card animate-in">
+          <div class="card-icon">🔁</div>
+          <h3>Consistency</h3>
+          <p>The same process every time, no matter the session. No "I forgot how you like your reports" moments. The skill file is the source of truth.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon gold">📈</div>
+          <h3>Compounding Value</h3>
+          <p>Each skill you teach compounds. Your companion gets more capable not through updates, but through your investment in teaching it your workflows.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon">🚀</div>
+          <h3>Delegation</h3>
+          <p>Real delegation, not "generate a draft." You say "run my morning briefing" and get a complete, formatted, delivered result — no hand-holding needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ EXAMPLE SKILLS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Example Skills</h2>
+        <p>Common skills that companions are taught. These are starting points — customize them to your exact needs.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs" style="max-width: 700px; margin: 0 auto 32px;">
+        <button class="tab-btn active" onclick="showTab('daily')">📅 Daily Ops</button>
+        <button class="tab-btn" onclick="showTab('research')">🔬 Research</button>
+        <button class="tab-btn" onclick="showTab('content')">✍️ Content</button>
+        <button class="tab-btn" onclick="showTab('dev')">💻 Development</button>
+      </div>
+
+      <!-- Daily Ops -->
+      <div class="tab-content active" id="tab-daily">
+        <div class="feature-list">
+          <div class="feature-item animate-in">
+            <div class="feature-icon">☀️</div>
+            <div>
+              <h4>Morning Briefing</h4>
+              <p>Compile news, calendar events, pending tasks, and overnight notifications into a single digest. Deliver at your preferred time via your preferred channel.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📊</div>
+            <div>
+              <h4>Weekly Summary</h4>
+              <p>Review the past week's completed work, open loops, key metrics, and upcoming deadlines. Format as a concise executive summary.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📧</div>
+            <div>
+              <h4>Email Triage</h4>
+              <p>Scan inbox, categorize messages by urgency and topic, draft replies for routine items, flag anything that needs personal attention.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">🗓️</div>
+            <div>
+              <h4>Meeting Prep</h4>
+              <p>Before meetings: gather context on attendees, review relevant documents, prepare talking points, set up note templates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="tab-content" id="tab-research">
+        <div class="feature-list">
+          <div class="feature-item animate-in">
+            <div class="feature-icon">🔍</div>
+            <div>
+              <h4>Deep Research</h4>
+              <p>Multi-source web research on a topic. Cross-reference sources, extract key facts, compile into a structured report with citations.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📰</div>
+            <div>
+              <h4>Competitive Intelligence</h4>
+              <p>Monitor competitors' news, product updates, hiring patterns, and public announcements. Weekly digest with trend analysis.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📈</div>
+            <div>
+              <h4>Market Scan</h4>
+              <p>Track industry trends, funding rounds, acquisitions, and emerging technologies relevant to your space.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">👤</div>
+            <div>
+              <h4>Person Research</h4>
+              <p>Before a meeting or outreach: compile background on a person — their work, interests, recent activity, mutual connections.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="tab-content" id="tab-content">
+        <div class="feature-list">
+          <div class="feature-item animate-in">
+            <div class="feature-icon">✍️</div>
+            <div>
+              <h4>Blog Post Drafting</h4>
+              <p>From outline to polished draft. Research the topic, structure arguments, write in your voice (learned from SOUL.md), include relevant examples.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">🐦</div>
+            <div>
+              <h4>Social Media</h4>
+              <p>Create platform-appropriate content from your ideas. Thread format for X/Twitter, concise for LinkedIn, casual for Telegram.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📝</div>
+            <div>
+              <h4>Document Editing</h4>
+              <p>Review and improve documents: tighten prose, fix structure, ensure consistency, add missing context. Respects your style preferences.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📧</div>
+            <div>
+              <h4>Email Drafting</h4>
+              <p>Draft emails matching tone to recipient — formal for investors, casual for teammates, persuasive for sales. Always in your voice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dev -->
+      <div class="tab-content" id="tab-dev">
+        <div class="feature-list">
+          <div class="feature-item animate-in">
+            <div class="feature-icon">🔀</div>
+            <div>
+              <h4>PR Review</h4>
+              <p>Review pull requests: check for bugs, style issues, test coverage, security concerns. Post review comments directly on GitHub.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">🐛</div>
+            <div>
+              <h4>Bug Investigation</h4>
+              <p>From error report to root cause. Search logs, trace code paths, identify the issue, suggest (or implement) the fix.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📦</div>
+            <div>
+              <h4>Deployment Checklist</h4>
+              <p>Pre-deployment: run tests, check staging, verify configs, create backup plan. Post-deployment: verify health, monitor errors.</p>
+            </div>
+          </div>
+          <div class="feature-item animate-in">
+            <div class="feature-icon">📋</div>
+            <div>
+              <h4>Sprint Planning</h4>
+              <p>Gather open issues, prioritize by impact, estimate effort, draft sprint scope. Present as a clear plan ready for team review.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ TEACHING SKILLS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How to Teach New Skills</h2>
+        <p>Teaching your companion is a conversation, not a configuration exercise.</p>
+      </div>
+
+      <div style="max-width: 700px; margin: 0 auto;">
+        <div class="flow-steps" style="flex-direction: column; align-items: stretch; gap: 0;">
+          <div class="card mb-16 animate-in">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+              <div class="flow-step-number" style="flex-shrink: 0; margin: 0;">1</div>
+              <div>
+                <h4>Describe What You Want</h4>
+                <p>Tell your companion what the workflow should do, step by step. Be as specific as you'd be training a smart new hire.</p>
+                <div class="code-block mt-16">
+                  <span class="code-accent">"Every Monday morning, I want you to:</span><br>
+                  <span class="code-string">1. Check our GitHub repos for open PRs</span><br>
+                  <span class="code-string">2. Summarize each PR in one line</span><br>
+                  <span class="code-string">3. Flag anything older than 3 days</span><br>
+                  <span class="code-string">4. Send me the list on Telegram"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-16 animate-in">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+              <div class="flow-step-number" style="flex-shrink: 0; margin: 0;">2</div>
+              <div>
+                <h4>The Companion Creates the Skill File</h4>
+                <p>Your companion writes it as a structured markdown file, confirms the steps with you, and saves it to the workspace.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-16 animate-in">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+              <div class="flow-step-number" style="flex-shrink: 0; margin: 0;">3</div>
+              <div>
+                <h4>Test & Refine</h4>
+                <p>Run the skill once, review the output. Too verbose? Not enough detail? Just tell it: <em>"Add source links to each PR summary."</em> The skill file gets updated.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card animate-in">
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+              <div class="flow-step-number" style="flex-shrink: 0; margin: 0;">4</div>
+              <div>
+                <h4>Use Forever</h4>
+                <p>The skill is now part of your companion's repertoire. Say <strong>"run the PR review"</strong> anytime — or schedule it to run automatically via cron.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ COMMON SKILLS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Common Skills Available</h2>
+        <p>Pre-built skill templates you can enable and customize. These cover the most common companion workflows.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- SKILL_TABLE_ROWS — Customize with your companion's actual skills -->
+            <tr>
+              <td><strong>Morning Briefing</strong></td>
+              <td>Daily Ops</td>
+              <td>News, calendar, tasks — one digest</td>
+              <td><span class="badge badge-active">Active</span></td>
+            </tr>
+            <tr>
+              <td><strong>Email Triage</strong></td>
+              <td>Communication</td>
+              <td>Categorize, draft, flag</td>
+              <td><span class="badge badge-available">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Deep Research</strong></td>
+              <td>Research</td>
+              <td>Multi-source topic research</td>
+              <td><span class="badge badge-active">Active</span></td>
+            </tr>
+            <tr>
+              <td><strong>PR Review</strong></td>
+              <td>Development</td>
+              <td>Automated code review</td>
+              <td><span class="badge badge-available">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Meeting Prep</strong></td>
+              <td>Daily Ops</td>
+              <td>Context, talking points, notes</td>
+              <td><span class="badge badge-available">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Weekly Retrospective</strong></td>
+              <td>Operations</td>
+              <td>Accomplishments, metrics, open items</td>
+              <td><span class="badge badge-coming">Coming Soon</span></td>
+            </tr>
+            <tr>
+              <td><strong>Social Content</strong></td>
+              <td>Content</td>
+              <td>Platform-specific post creation</td>
+              <td><span class="badge badge-available">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Expense Report</strong></td>
+              <td>Operations</td>
+              <td>Receipt parsing, categorization</td>
+              <td><span class="badge badge-coming">Coming Soon</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p>Your AI companion — it knows your world AND gets things done.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Companion</h5>
+        <ul>
+          <li><a href="#">Chat with Me</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+
+    // Tabs
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.animationPlayState = 'running';
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

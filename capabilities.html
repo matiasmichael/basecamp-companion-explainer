@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capabilities & Integrations — <!-- COMPANION_NAME --> · Basecamp</title>
+  <meta name="description" content="What your Basecamp companion can do: web search, code execution, browser automation, messaging, and 700+ integrations.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture.html">How It Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="capabilities.html" class="active">Capabilities</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="architecture.html">How It Works</a>
+    <a href="skills.html">Skills</a>
+    <a href="capabilities.html" class="active">Capabilities</a>
+    <a href="projects.html">Projects</a>
+    <a href="guide.html">Guide</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-subtitle">🔌 Capabilities & Integrations</div>
+      <h1>What Your Companion <span class="text-orange">Can Do</span></h1>
+      <p>
+        Real tools, real integrations, real results. Your companion doesn't simulate actions — it executes them on actual systems with actual APIs.
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ CORE CAPABILITIES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Core Capabilities</h2>
+        <p>Built-in tools your companion can use right out of the box.</p>
+      </div>
+
+      <div class="card-grid cols-3">
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">🔍</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Web Search</h3>
+          <p>Real-time internet search via Brave Search API. Find news, research topics, fact-check claims, discover information.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">🌐</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Web Browsing</h3>
+          <p>Fetch and read web pages. Extract content from URLs, follow links, gather data from any public webpage.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">💻</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Code Execution</h3>
+          <p>Run Python, Node.js, Bash, and any language available on the system. Write scripts, process data, build tools.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">📁</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>File Management</h3>
+          <p>Create, read, edit, and organize files. Manage the workspace, maintain memory files, structure projects.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon gold">🖥️</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Browser Automation</h3>
+          <p>Headless Chromium for advanced web interaction — fill forms, take screenshots, scrape dynamic content, automate workflows.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">⏰</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Scheduled Tasks</h3>
+          <p>Cron-based scheduling for recurring tasks. Morning briefings, monitoring, data collection — all automated.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon gold">💬</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Messaging</h3>
+          <p>Send and receive messages through configured channels — Telegram, Slack, Discord, and the Aight mobile app.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">🔀</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Git & Version Control</h3>
+          <p>Clone repos, create branches, commit changes, push code, open pull requests — full git workflow support.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div class="card-icon">🤖</div>
+            <span class="badge badge-active">Active</span>
+          </div>
+          <h3>Sub-Agents</h3>
+          <p>Delegate complex tasks to background workers. Parallel processing, long-running jobs, and multi-step workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ INTEGRATIONS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Integrations</h2>
+        <p>Connect your companion to the tools you already use. 700+ integrations available through the Skills marketplace and Composio.</p>
+      </div>
+
+      <!-- Integration categories -->
+      <div class="tabs" style="max-width: 600px; margin: 0 auto 32px;">
+        <button class="tab-btn active" onclick="showTab('productivity')">📅 Productivity</button>
+        <button class="tab-btn" onclick="showTab('development')">💻 Development</button>
+        <button class="tab-btn" onclick="showTab('communication')">💬 Communication</button>
+        <button class="tab-btn" onclick="showTab('data')">📊 Data & Analytics</button>
+      </div>
+
+      <!-- Productivity -->
+      <div class="tab-content active" id="tab-productivity">
+        <div class="card-grid cols-2" style="max-width: 800px; margin: 0 auto;">
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>📅 Google Calendar</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Read events, create meetings, check availability, send invites. Full calendar management.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>📧 Gmail</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Read, draft, send, and organize emails. Smart triage and automated responses.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>📝 Notion</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Read and write to Notion databases and pages. Sync tasks, notes, and documentation.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>✅ Todoist / Linear</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Create, update, and track tasks across your project management tools.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Development -->
+      <div class="tab-content" id="tab-development">
+        <div class="card-grid cols-2" style="max-width: 800px; margin: 0 auto;">
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>🐙 GitHub</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Full GitHub integration — repos, PRs, issues, code review, actions, releases.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>🎫 Jira</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Create and update tickets, track sprint progress, manage backlogs.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>▲ Vercel / Netlify</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Deploy websites, check build status, manage environment variables.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>🐳 Docker</h4>
+              <span class="badge badge-coming">Coming Soon</span>
+            </div>
+            <p class="mt-16">Container management, image builds, deployment orchestration.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Communication -->
+      <div class="tab-content" id="tab-communication">
+        <div class="card-grid cols-2" style="max-width: 800px; margin: 0 auto;">
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>✈️ Telegram</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Send messages, receive commands, deliver briefings, manage group chats.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>💼 Slack</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Channel messaging, DMs, thread replies, file sharing, status updates.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>🎮 Discord</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Server management, messaging, community engagement, bot commands.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>📱 Aight App</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Native mobile interface with voice mode, reminders, and the Today view dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data -->
+      <div class="tab-content" id="tab-data">
+        <div class="card-grid cols-2" style="max-width: 800px; margin: 0 auto;">
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>📊 Google Sheets</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Read, write, and analyze spreadsheet data. Build reports, track metrics.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>📈 Analytics APIs</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Connect to Google Analytics, Mixpanel, Amplitude — pull metrics and build dashboards.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>🗄️ Databases</h4>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <p class="mt-16">Query PostgreSQL, MySQL, SQLite. Run reports, extract data, generate insights.</p>
+          </div>
+          <div class="card animate-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <h4>🔗 Custom APIs</h4>
+              <span class="badge badge-active">Active</span>
+            </div>
+            <p class="mt-16">Connect to any REST or GraphQL API. The companion can make HTTP requests to any endpoint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ LIMITATIONS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Current Limitations</h2>
+        <p>Transparency matters. Here's what your companion can't do yet — and how to work around it.</p>
+      </div>
+
+      <div class="feature-list" style="max-width: 700px;">
+        <div class="feature-item animate-in">
+          <div class="feature-icon" style="background: var(--gold-light);">🚫</div>
+          <div>
+            <h4>No Real-Time Audio/Video</h4>
+            <p>Can't join Zoom/Meet calls or process live audio streams. <strong>Workaround:</strong> Provide meeting transcripts or notes for processing.</p>
+          </div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon" style="background: var(--gold-light);">🚫</div>
+          <div>
+            <h4>No Physical World Actions</h4>
+            <p>Can't print, ship packages, or interact with physical devices. <strong>Workaround:</strong> Can order online, trigger smart home APIs, or send instructions to humans.</p>
+          </div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon" style="background: var(--gold-light);">🚫</div>
+          <div>
+            <h4>No Financial Transactions (by default)</h4>
+            <p>Won't make purchases or move money without explicit authorization. <strong>Enable:</strong> Configure specific financial integrations with guardrails.</p>
+          </div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon" style="background: var(--gold-light);">🚫</div>
+          <div>
+            <h4>Token Window Limits</h4>
+            <p>Very long conversations cause context drift. <strong>Workaround:</strong> Start fresh sessions for new topics; the file system preserves continuity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout mt-48" style="max-width: 700px;">
+        <h4>🔑 Enabling New Capabilities</h4>
+        <p>Most "can't do" items are configuration — not fundamental limits. Need a new integration? Ask your companion to set it up, or browse the <strong>Skills marketplace</strong> for 700+ connectors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p>Your AI companion — it knows your world AND gets things done.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Companion</h5>
+        <ul>
+          <li><a href="#">Chat with Me</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.animationPlayState = 'running';
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

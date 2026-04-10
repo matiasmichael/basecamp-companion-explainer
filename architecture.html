@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — <!-- COMPANION_NAME --> · Basecamp</title>
+  <meta name="description" content="Architecture, memory system, identity files, and how your Basecamp companion works under the hood.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture.html" class="active">How It Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="architecture.html" class="active">How It Works</a>
+    <a href="skills.html">Skills</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="projects.html">Projects</a>
+    <a href="guide.html">Guide</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-subtitle">🏗️ Architecture & Memory</div>
+      <h1>How <!-- COMPANION_NAME --> Works</h1>
+      <p>
+        The memory system, identity files, context windows, and session management that power your companion. Understanding this is key to working together effectively.
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ THE CORE TOOLBOX ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Core Toolbox</h2>
+        <p>Your companion isn't just a language model — it has real tools on a real machine.</p>
+      </div>
+
+      <div class="card-grid cols-3">
+        <div class="card animate-in">
+          <div class="card-icon">💾</div>
+          <h3>Persistent Workspace</h3>
+          <p>Files, memory, and configs that survive across sessions. Nothing gets lost when the conversation ends.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon">💻</div>
+          <h3>Linux Shell</h3>
+          <p>Full terminal access — git, python, node, curl, anything. Real code running on a real machine.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon">🌐</div>
+          <h3>Web Browser</h3>
+          <p>Headless Chromium for browsing, screenshots, scraping, and interacting with web applications.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon gold">🔍</div>
+          <h3>Web Search</h3>
+          <p>Live internet search and page reading. Research, fact-check, and gather information in real-time.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon">⏰</div>
+          <h3>Cron Scheduler</h3>
+          <p>Automated tasks on schedule. Morning briefings, reminders, data collection — all on autopilot.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon gold">💬</div>
+          <h3>Messaging</h3>
+          <p>Send and receive messages through Telegram, Slack, and other channels. Stay connected with your team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ MEMORY SYSTEM ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Two Layers of Memory</h2>
+        <p>Understanding this is the key to knowing when your companion remembers things — and when it doesn't.</p>
+      </div>
+
+      <div class="flow-steps mb-48">
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">1</div>
+          <h4>Chat Context</h4>
+          <p>Current conversation. Has a token window — old messages get compressed. Details can get lost.</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">2</div>
+          <h4>Memory Files</h4>
+          <p>Markdown files on disk. Permanent. Preferences, specs, and facts live here forever.</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">3</div>
+          <h4>Recalled on Demand</h4>
+          <p>Before answering, the companion searches files. If it isn't written down, it might not be found.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="max-width: 700px; margin: 0 auto;">
+        <h4>💡 The Key Insight</h4>
+        <p>If you tell your companion something important and it doesn't get written to a file — future sessions may not know it. That's why <strong>"write it down"</strong> matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHY FILE-BASED ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2 class="mb-24">Why File-Based Memory Is Powerful</h2>
+          <p class="mb-16">Most AI assistants have one type of memory: the conversation window. Once it gets long enough, the oldest messages fall off. Details are gone forever.</p>
+          <p class="mb-16">Your companion's memory works differently. <strong>The file system is the memory</strong> — and it has no upper limit. Every important fact gets written to markdown on disk. Those files don't expire, don't get compressed, and don't fall off any edge.</p>
+          <p>The insight: this turns memory into a <strong>search problem</strong>, not a capacity problem. Search is a solved problem that gets more efficient every day.</p>
+
+          <div class="callout-gold callout mt-32">
+            <h4>🎯 In Theory</h4>
+            <p>Infinite memory with perfect recall. In practice, we're getting closer every day as search and file management improve.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-24">Where It Can Break Down</h3>
+          <div class="feature-list" style="max-width: 100%;">
+            <div class="feature-item">
+              <div class="feature-icon">✏️</div>
+              <div>
+                <h4>The Write Problem</h4>
+                <p>Memory is only as good as what gets written. If the companion doesn't save it, future sessions won't know. Say <strong>"save that"</strong> to lock it in.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📅</div>
+              <div>
+                <h4>The Staleness Problem</h4>
+                <p>Files can become outdated. No automatic expiry on a markdown file — it looks just as valid whether written yesterday or six months ago.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🔎</div>
+              <div>
+                <h4>The Search-Not-Read Problem</h4>
+                <p>Search depends on asking the right question. If a fact is filed under an unexpected heading, the companion might miss it.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">⚠️</div>
+              <div>
+                <h4>The Confabulation Problem</h4>
+                <p>The biggest risk: thinking it remembers something when it's reconstructing from compressed summaries. The fix: always check the file.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ IDENTITY FILES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Identity Files</h2>
+        <p>These files define who your companion is and how it behaves. Loaded into the system prompt at session start — they shape how it thinks, talks, and acts.</p>
+      </div>
+
+      <div class="card-grid cols-2">
+        <div class="card animate-in">
+          <div class="card-icon">🧬</div>
+          <h3>SOUL.md</h3>
+          <p>The deepest layer. Personality, communication style, values, boundaries. This is where "sharp and direct, no filler" or "warm and supportive" comes from.</p>
+          <div class="code-block mt-16">
+            <span class="code-comment"># SOUL.md</span><br>
+            <span class="code-key">## Personality</span><br>
+            <span class="code-string">Direct, efficient, no filler.</span><br>
+            <span class="code-string">Flags uncertainty explicitly.</span><br>
+            <span class="code-key">## Communication Style</span><br>
+            <span class="code-string">Concise bullets for updates.</span><br>
+            <span class="code-string">Detailed narratives for analysis.</span>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Controls: Tone, personality, values, guardrails</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon gold">🪪</div>
+          <h3>IDENTITY.md</h3>
+          <p>The basics: name, model, emoji, role. Simple constants — think of it as the companion's birth certificate.</p>
+          <div class="code-block mt-16">
+            <span class="code-comment"># IDENTITY.md</span><br>
+            <span class="code-key">Name:</span> <span class="code-accent"><!-- COMPANION_NAME --></span><br>
+            <span class="code-key">Emoji:</span> <span class="code-accent"><!-- COMPANION_EMOJI --></span><br>
+            <span class="code-key">Role:</span> <span class="code-string">AI Companion</span><br>
+            <span class="code-key">Model:</span> <span class="code-string">Claude Sonnet</span>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Controls: Name, username, model, display info</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon">👤</div>
+          <h3>USER.md</h3>
+          <p>Everything about the people the companion serves — names, timezones, preferences, working styles, communication quirks.</p>
+          <div class="code-block mt-16">
+            <span class="code-comment"># USER.md</span><br>
+            <span class="code-key">## Preferences</span><br>
+            <span class="code-string">Timezone: PT (Los Angeles)</span><br>
+            <span class="code-string">Briefing: 6:30 AM, max 5 items</span><br>
+            <span class="code-string">Style: Bullet points for updates</span>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Updated by: Telling your companion about yourself</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon gold">📜</div>
+          <h3>MEMORY.md</h3>
+          <p>The persistent knowledge base. Facts, decisions, project context, preferences — everything important that should survive across sessions.</p>
+          <div class="code-block mt-16">
+            <span class="code-comment"># MEMORY.md</span><br>
+            <span class="code-key">## Decisions</span><br>
+            <span class="code-string">- Use TypeScript for all new code</span><br>
+            <span class="code-string">- Deploy to Vercel, staging first</span><br>
+            <span class="code-key">## Key Dates</span><br>
+            <span class="code-string">- Launch: March 15</span>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Updated by: Companion writes automatically + "save that"</p>
+        </div>
+      </div>
+
+      <div class="card mt-32 animate-in" style="background: var(--volcanic); border-color: transparent; text-align: center; padding: 40px;">
+        <div class="card-icon" style="background: rgba(232, 115, 44, 0.2); margin: 0 auto 20px;">📝</div>
+        <h3 style="color: white; margin-bottom: 12px;">HEARTBEAT.md</h3>
+        <p style="color: rgba(255,255,255,0.7); margin: 0 auto;">The companion's session journal. What it worked on, what's pending, what was accomplished. Updated at the end of each session to maintain continuity across conversations.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ HOW TO EDIT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How to Shape Your Companion</h2>
+        <p>No config files to learn. The best way to shape your companion is by <strong>talking to it</strong> about how you want it to behave.</p>
+      </div>
+
+      <div class="card-grid cols-2" style="max-width: 800px; margin: 0 auto;">
+        <div class="card animate-in" style="background: var(--orange-light); border-color: rgba(232,115,44,0.12);">
+          <h4 class="text-orange mb-16">💬 Just Say It</h4>
+          <p style="font-style: italic;">"Be more concise in briefings. Bullet points only."</p>
+          <p class="mt-16" style="font-style: italic;">"Don't use emojis in serious reports."</p>
+          <p class="mt-16" style="font-style: italic;">"I prefer you flag uncertainties explicitly."</p>
+          <p class="mt-16" style="font-style: italic;">"My timezone changed — I'm in NYC now."</p>
+        </div>
+        <div class="card animate-in">
+          <h4 class="mb-16">✅ What Happens</h4>
+          <p>The companion updates the relevant file (SOUL.md, USER.md, etc.) based on your instruction. The change takes effect in the current session and persists into all future ones.</p>
+          <p class="mt-16">No restart needed. No config editing. Just a conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ THE DRIFT PROBLEM ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Context Drift Problem</h2>
+        <p>Identity files are loaded at session start. As conversations get longer, identity instructions get proportionally smaller in the context window.</p>
+      </div>
+
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div class="card mb-16 animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <h4>Session Start</h4>
+            <span class="badge badge-active">~95% Identity</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 95%;"></div>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Identity files dominate the context. Companion behaves exactly as configured.</p>
+        </div>
+
+        <div class="card mb-16 animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <h4>Mid-Session (~50k tokens)</h4>
+            <span class="badge badge-available">~60% Identity</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 60%;"></div>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Conversation history starts competing. Still solid, but personality may soften slightly.</p>
+        </div>
+
+        <div class="card mb-16 animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <h4>Long Session (~150k tokens)</h4>
+            <span class="badge badge-coming">~25% Identity</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 25%;"></div>
+          </div>
+          <p class="text-muted mt-16" style="font-size: 0.85rem;">Identity is a small fraction. Companion may feel more "generic." Time for a fresh session.</p>
+        </div>
+
+        <div class="callout mt-32">
+          <h4>💡 The Fix</h4>
+          <p>If your companion starts feeling generic — it's drift. A <strong>fresh session</strong> resets it instantly. Or just say: <strong>"You're drifting, re-read your SOUL."</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ SESSION MANAGEMENT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Session Management</h2>
+        <p>How conversations work, reset, and maintain continuity.</p>
+      </div>
+
+      <div class="card-grid cols-3">
+        <div class="card animate-in">
+          <div class="card-icon">🔄</div>
+          <h3>Session Start</h3>
+          <p>Identity files (SOUL, IDENTITY, USER) are loaded. HEARTBEAT.md is read for recent context. The companion is fully "itself" again.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon gold">💬</div>
+          <h3>During Session</h3>
+          <p>The conversation builds context. Important discoveries are written to memory files. The companion learns as you talk.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon">📝</div>
+          <h3>Session End</h3>
+          <p>HEARTBEAT.md is updated with what happened, what's pending, and what was decided. The next session picks up where this one left off.</p>
+        </div>
+      </div>
+
+      <div class="callout-gold callout mt-48" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+        <h4>🔑 Key Principle</h4>
+        <p>The companion doesn't lose knowledge between sessions — it <strong>writes things down</strong>. The file system bridges the gap between sessions the same way a notebook bridges the gap between workdays.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p>Your AI companion — it knows your world AND gets things done.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Companion</h5>
+        <ul>
+          <li><a href="#">Chat with Me</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.animationPlayState = 'running';
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Tasks — <!-- COMPANION_NAME --> · Basecamp</title>
+  <meta name="description" content="Active projects, timelines, open loops, and completed work. Your companion's task dashboard.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture.html">How It Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="architecture.html">How It Works</a>
+    <a href="skills.html">Skills</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="guide.html">Guide</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-subtitle">📊 Projects & Tasks</div>
+      <h1>What's <span class="text-orange">In Progress</span></h1>
+      <p>
+        Active projects, open loops, completed milestones, and upcoming deadlines. A living dashboard that your companion keeps updated.
+      </p>
+      <div class="hero-badge mt-24">
+        <span class="status-dot"></span>
+        <!-- PROJECT_LAST_UPDATED -->
+        Last updated: Just now
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ ACTIVE PROJECTS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Active Projects</h2>
+        <p>Current projects your companion is working on or tracking.</p>
+      </div>
+
+      <!-- PROJECT TEMPLATE: Duplicate this card for each project -->
+      <div class="card-grid cols-2">
+
+        <!-- PROJECT_CARD_1 -->
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+            <div>
+              <span class="badge badge-active mb-16">In Progress</span>
+              <h3 class="mt-16"><!-- PROJECT_1_NAME (e.g. "Website Redesign") --></h3>
+            </div>
+            <span style="font-size: 2rem;"><!-- PROJECT_1_EMOJI (e.g. "🎨") -->🎨</span>
+          </div>
+          <p><!-- PROJECT_1_DESCRIPTION (e.g. "Complete overhaul of the marketing site with new brand guidelines.") -->
+            Complete overhaul of the marketing site with new brand guidelines and responsive design.
+          </p>
+          <div class="mt-24">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+              <span class="text-muted">Progress</span>
+              <!-- PROJECT_1_PROGRESS -->
+              <span style="font-weight: 600;">65%</span>
+            </div>
+            <div class="progress-bar">
+              <!-- PROJECT_1_PROGRESS_VALUE -->
+              <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="mt-16" style="display: flex; gap: 16px; font-size: 0.85rem;">
+            <span class="text-muted"><!-- PROJECT_1_STARTED -->Started: Mar 1</span>
+            <span class="text-muted"><!-- PROJECT_1_DUE -->Due: Apr 15</span>
+          </div>
+        </div>
+
+        <!-- PROJECT_CARD_2 -->
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+            <div>
+              <span class="badge badge-active mb-16">In Progress</span>
+              <h3 class="mt-16"><!-- PROJECT_2_NAME --></h3>
+            </div>
+            <span style="font-size: 2rem;"><!-- PROJECT_2_EMOJI -->⚡</span>
+          </div>
+          <p><!-- PROJECT_2_DESCRIPTION -->
+            API integration layer for connecting third-party services and automating cross-platform workflows.
+          </p>
+          <div class="mt-24">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+              <span class="text-muted">Progress</span>
+              <span style="font-weight: 600;">40%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="mt-16" style="display: flex; gap: 16px; font-size: 0.85rem;">
+            <span class="text-muted">Started: Mar 15</span>
+            <span class="text-muted">Due: May 1</span>
+          </div>
+        </div>
+
+        <!-- PROJECT_CARD_3: Planning phase -->
+        <div class="card animate-in">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+            <div>
+              <span class="badge badge-available mb-16">Planning</span>
+              <h3 class="mt-16"><!-- PROJECT_3_NAME --></h3>
+            </div>
+            <span style="font-size: 2rem;"><!-- PROJECT_3_EMOJI -->📱</span>
+          </div>
+          <p><!-- PROJECT_3_DESCRIPTION -->
+            Mobile-first dashboard for real-time metrics, alerts, and team updates.
+          </p>
+          <div class="mt-24">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+              <span class="text-muted">Progress</span>
+              <span style="font-weight: 600;">10%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 10%;"></div>
+            </div>
+          </div>
+          <div class="mt-16" style="display: flex; gap: 16px; font-size: 0.85rem;">
+            <span class="text-muted">Started: Apr 1</span>
+            <span class="text-muted">Due: Jun 1</span>
+          </div>
+        </div>
+
+        <!-- PROJECT_CARD_4: Completed -->
+        <div class="card animate-in" style="opacity: 0.75;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+            <div>
+              <span class="badge" style="background: rgba(76,175,80,0.1); color: #2E7D32;">✅ Completed</span>
+              <h3 class="mt-16"><!-- PROJECT_4_NAME --></h3>
+            </div>
+            <span style="font-size: 2rem;"><!-- PROJECT_4_EMOJI -->📋</span>
+          </div>
+          <p><!-- PROJECT_4_DESCRIPTION -->
+            Onboarding documentation and setup guides for new team members.
+          </p>
+          <div class="mt-24">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+              <span class="text-muted">Progress</span>
+              <span style="font-weight: 600; color: #2E7D32;">100%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%; background: #4CAF50;"></div>
+            </div>
+          </div>
+          <div class="mt-16" style="display: flex; gap: 16px; font-size: 0.85rem;">
+            <span class="text-muted">Completed: Mar 28</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD MORE PROJECTS: Copy a project card above and customize the template variables -->
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ OPEN LOOPS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Open Loops</h2>
+        <p>Tasks and items that are in progress or waiting for input. Nothing falls through the cracks.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Project</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Due</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- TASK_TABLE_ROWS — Customize with your companion's actual tasks -->
+            <tr>
+              <td><strong><!-- TASK_1_NAME -->Review design mockups</strong></td>
+              <td><!-- TASK_1_PROJECT -->Website Redesign</td>
+              <td><span class="badge" style="background: rgba(232,115,44,0.1); color: var(--orange);">High</span></td>
+              <td><span class="badge badge-active">In Progress</span></td>
+              <td><!-- TASK_1_DUE -->Apr 10</td>
+            </tr>
+            <tr>
+              <td><strong><!-- TASK_2_NAME -->Set up CI/CD pipeline</strong></td>
+              <td><!-- TASK_2_PROJECT -->API Layer</td>
+              <td><span class="badge" style="background: rgba(232,115,44,0.1); color: var(--orange);">High</span></td>
+              <td><span class="badge badge-available">Blocked</span></td>
+              <td><!-- TASK_2_DUE -->Apr 12</td>
+            </tr>
+            <tr>
+              <td><strong><!-- TASK_3_NAME -->Draft blog post on launch</strong></td>
+              <td><!-- TASK_3_PROJECT -->Content</td>
+              <td><span class="badge" style="background: var(--gold-light); color: #B8860B;">Medium</span></td>
+              <td><span class="badge badge-active">In Progress</span></td>
+              <td><!-- TASK_3_DUE -->Apr 14</td>
+            </tr>
+            <tr>
+              <td><strong><!-- TASK_4_NAME -->Update API documentation</strong></td>
+              <td><!-- TASK_4_PROJECT -->API Layer</td>
+              <td><span class="badge" style="background: rgba(76,175,80,0.1); color: #2E7D32;">Low</span></td>
+              <td><span class="badge badge-coming">Pending</span></td>
+              <td><!-- TASK_4_DUE -->Apr 20</td>
+            </tr>
+            <tr>
+              <td><strong><!-- TASK_5_NAME -->Security audit preparation</strong></td>
+              <td><!-- TASK_5_PROJECT -->Operations</td>
+              <td><span class="badge" style="background: rgba(232,115,44,0.1); color: var(--orange);">High</span></td>
+              <td><span class="badge badge-coming">Pending</span></td>
+              <td><!-- TASK_5_DUE -->Apr 25</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recent Activity</h2>
+        <p>What your companion has been working on. A living log of progress and completions.</p>
+      </div>
+
+      <div style="max-width: 700px; margin: 0 auto;">
+        <div class="timeline">
+          <!-- TIMELINE_ITEMS — Customize with your companion's actual activity -->
+          <div class="timeline-item animate-in">
+            <div class="timeline-dot completed"></div>
+            <div class="timeline-date"><!-- TIMELINE_1_DATE -->Today, 9:00 AM</div>
+            <h4><!-- TIMELINE_1_TITLE -->Morning briefing delivered</h4>
+            <p><!-- TIMELINE_1_DESC -->Compiled 5 news items, 3 calendar events, and 2 pending tasks into daily digest.</p>
+          </div>
+
+          <div class="timeline-item animate-in">
+            <div class="timeline-dot completed"></div>
+            <div class="timeline-date"><!-- TIMELINE_2_DATE -->Yesterday, 4:30 PM</div>
+            <h4><!-- TIMELINE_2_TITLE -->PR #142 reviewed and approved</h4>
+            <p><!-- TIMELINE_2_DESC -->Code review completed. Found 2 minor style issues, both addressed. Approved for merge.</p>
+          </div>
+
+          <div class="timeline-item animate-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"><!-- TIMELINE_3_DATE -->Yesterday, 2:00 PM</div>
+            <h4><!-- TIMELINE_3_TITLE -->Research report: Market Analysis Q2</h4>
+            <p><!-- TIMELINE_3_DESC -->15-page research report with competitive landscape, trend analysis, and recommendations.</p>
+          </div>
+
+          <div class="timeline-item animate-in">
+            <div class="timeline-dot completed"></div>
+            <div class="timeline-date"><!-- TIMELINE_4_DATE -->Apr 8, 11:00 AM</div>
+            <h4><!-- TIMELINE_4_TITLE -->Onboarding docs completed</h4>
+            <p><!-- TIMELINE_4_DESC -->Finished 12 setup guides, 3 workflow documents, and the team handbook update.</p>
+          </div>
+
+          <div class="timeline-item animate-in">
+            <div class="timeline-dot pending"></div>
+            <div class="timeline-date"><!-- TIMELINE_5_DATE -->Apr 7, 3:00 PM</div>
+            <h4><!-- TIMELINE_5_TITLE -->CI/CD pipeline — blocked</h4>
+            <p><!-- TIMELINE_5_DESC -->Waiting for DevOps team to provision staging environment credentials.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ COMPLETED WORK ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Completed This Month</h2>
+        <p>Work finished and delivered. Proof that your companion earns its keep.</p>
+      </div>
+
+      <div class="stats-row mb-48">
+        <div class="stat animate-in">
+          <!-- COMPLETED_TASKS_COUNT -->
+          <div class="stat-value">23</div>
+          <div class="stat-label">Tasks Completed</div>
+        </div>
+        <div class="stat animate-in">
+          <!-- COMPLETED_REPORTS_COUNT -->
+          <div class="stat-value">8</div>
+          <div class="stat-label">Reports Delivered</div>
+        </div>
+        <div class="stat animate-in">
+          <!-- COMPLETED_BRIEFINGS_COUNT -->
+          <div class="stat-value">30</div>
+          <div class="stat-label">Briefings Sent</div>
+        </div>
+        <div class="stat animate-in">
+          <!-- COMPLETED_PRS_COUNT -->
+          <div class="stat-value">12</div>
+          <div class="stat-label">PRs Reviewed</div>
+        </div>
+      </div>
+
+      <div class="card-grid cols-3">
+        <!-- COMPLETED_ITEMS — Add your companion's completed work here -->
+        <div class="card animate-in" style="border-left: 3px solid #4CAF50;">
+          <h4><!-- COMPLETED_1 -->Q1 Performance Report</h4>
+          <p class="text-muted" style="font-size: 0.85rem;">Completed Mar 31</p>
+        </div>
+        <div class="card animate-in" style="border-left: 3px solid #4CAF50;">
+          <h4><!-- COMPLETED_2 -->Team Onboarding Docs</h4>
+          <p class="text-muted" style="font-size: 0.85rem;">Completed Mar 28</p>
+        </div>
+        <div class="card animate-in" style="border-left: 3px solid #4CAF50;">
+          <h4><!-- COMPLETED_3 -->Homepage SEO Audit</h4>
+          <p class="text-muted" style="font-size: 0.85rem;">Completed Mar 25</p>
+        </div>
+        <div class="card animate-in" style="border-left: 3px solid #4CAF50;">
+          <h4><!-- COMPLETED_4 -->API Rate Limiter</h4>
+          <p class="text-muted" style="font-size: 0.85rem;">Completed Mar 22</p>
+        </div>
+        <div class="card animate-in" style="border-left: 3px solid #4CAF50;">
+          <h4><!-- COMPLETED_5 -->Investor Update Email</h4>
+          <p class="text-muted" style="font-size: 0.85rem;">Completed Mar 20</p>
+        </div>
+        <div class="card animate-in" style="border-left: 3px solid #4CAF50;">
+          <h4><!-- COMPLETED_6 -->Competitor Research Brief</h4>
+          <p class="text-muted" style="font-size: 0.85rem;">Completed Mar 18</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p>Your AI companion — it knows your world AND gets things done.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Companion</h5>
+        <ul>
+          <li><a href="#">Chat with Me</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.animationPlayState = 'running';
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

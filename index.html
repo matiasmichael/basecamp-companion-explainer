@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><!-- COMPANION_NAME --> — Basecamp Companion</title>
+  <meta name="description" content="Meet <!-- COMPANION_NAME -->, your Basecamp AI companion. It knows your world AND gets things done.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="architecture.html">How It Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="guide.html">Guide</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="architecture.html">How It Works</a>
+    <a href="skills.html">Skills</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="projects.html">Projects</a>
+    <a href="guide.html">Guide</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        <!-- COMPANION_STATUS (e.g. "Online & Operational") -->
+        Online & Operational
+      </div>
+      <h1>Meet <!-- COMPANION_NAME --></h1>
+      <p>
+        <!-- COMPANION_TAGLINE (e.g. "A persistent AI companion with a workspace, tools, and memory — built to work alongside you every day.") -->
+        A persistent AI companion with a workspace, tools, and memory — built to work alongside you every day.
+      </p>
+      <div class="hero-subtitle">
+        <!-- COMPANION_EMOJI --> <!-- COMPANION_ROLE (e.g. "AI Companion on Basecamp") -->
+        🤖 AI Companion on Basecamp
+      </div>
+
+      <!-- CUSTOMIZABLE STATS -->
+      <div class="stats-row mt-48">
+        <div class="stat animate-in">
+          <!-- STAT_1_VALUE -->
+          <div class="stat-value">∞</div>
+          <!-- STAT_1_LABEL -->
+          <div class="stat-label">Persistent Memory</div>
+        </div>
+        <div class="stat animate-in">
+          <!-- STAT_2_VALUE -->
+          <div class="stat-value">24/7</div>
+          <!-- STAT_2_LABEL -->
+          <div class="stat-label">Always Available</div>
+        </div>
+        <div class="stat animate-in">
+          <!-- STAT_3_VALUE -->
+          <div class="stat-value">700+</div>
+          <!-- STAT_3_LABEL -->
+          <div class="stat-label">Skills Available</div>
+        </div>
+        <div class="stat animate-in">
+          <!-- STAT_4_VALUE -->
+          <div class="stat-value">File-Based</div>
+          <!-- STAT_4_LABEL -->
+          <div class="stat-label">Memory System</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ BEING + DOING ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Not Just a Chatbot. Not Just a Tool.</h2>
+        <p>Every other AI product is either "being" (companionship) or "doing" (tasks). Your Basecamp companion combines both.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="card animate-in">
+          <div class="card-icon">🧠</div>
+          <h3>The "Being" Side</h3>
+          <p>Your companion knows your soul. It remembers your preferences, your communication style, your goals, your quirks. It builds a persistent understanding of who you are — not from a database, but from real conversations written to real files.</p>
+          <div class="callout mt-24">
+            <h4>💡 Key Insight</h4>
+            <p>The companion doesn't just store facts about you — it develops a working model of how you think, what you value, and how you like things done.</p>
+          </div>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon" style="background: var(--gold-light);">⚡</div>
+          <h3>The "Doing" Side</h3>
+          <p>Your companion gets things done. It searches the web, writes code, manages files, sends messages, schedules tasks, connects to your tools. It's a sharp, resourceful employee — not a suggestion engine.</p>
+          <div class="callout-gold callout mt-24">
+            <h4>🎯 The Magic</h4>
+            <p>It knows your soul AND orders your flowers. Context-aware action is what separates a companion from a chatbot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ HOW IT'S DIFFERENT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Makes This Different</h2>
+        <p>A quick look at the architecture that makes Basecamp companions uniquely powerful.</p>
+      </div>
+
+      <div class="flow-steps">
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">1</div>
+          <h4>Persistent Memory</h4>
+          <p>File-based, infinite, searchable. Your preferences and context survive across every session.</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">2</div>
+          <h4>Identity Files</h4>
+          <p>SOUL.md, IDENTITY.md, USER.md — files that define who the companion is and who it serves.</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">3</div>
+          <h4>Real Tools</h4>
+          <p>Shell, browser, web search, APIs, scheduling. Not simulated — actually executed.</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step animate-in">
+          <div class="flow-step-number">4</div>
+          <h4>Learnable Skills</h4>
+          <p>Teach it once, it remembers forever. Skills are SOPs that actually get followed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ EXPLORE PAGES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore</h2>
+        <p>Dive deeper into how your companion works, what it can do, and how to get the most out of it.</p>
+      </div>
+
+      <div class="card-grid cols-3">
+        <a href="architecture.html" class="card animate-in">
+          <div class="card-icon">🏗️</div>
+          <h3>How It Works</h3>
+          <p>Memory system, context windows, identity files, and the architecture that makes it all click.</p>
+          <span class="card-arrow">Learn more →</span>
+        </a>
+        <a href="skills.html" class="card animate-in">
+          <div class="card-icon gold">📋</div>
+          <h3>Skills</h3>
+          <p>Reusable instruction sets — SOPs that actually get followed. Teach once, executed every time.</p>
+          <span class="card-arrow">Explore skills →</span>
+        </a>
+        <a href="capabilities.html" class="card animate-in">
+          <div class="card-icon">🔌</div>
+          <h3>Capabilities</h3>
+          <p>Web search, code execution, browser automation, messaging, and all the integrations available.</p>
+          <span class="card-arrow">See capabilities →</span>
+        </a>
+        <a href="projects.html" class="card animate-in">
+          <div class="card-icon gold">📊</div>
+          <h3>Projects & Tasks</h3>
+          <p>Active projects, timelines, open loops, and completed work — all in one dashboard.</p>
+          <span class="card-arrow">View projects →</span>
+        </a>
+        <a href="guide.html" class="card animate-in">
+          <div class="card-icon">📖</div>
+          <h3>Working Together</h3>
+          <p>Best practices, tips, and strategies for getting the most out of your AI companion.</p>
+          <span class="card-arrow">Read the guide →</span>
+        </a>
+        <div class="card animate-in" style="background: var(--volcanic); border-color: transparent;">
+          <div class="card-icon" style="background: rgba(232, 115, 44, 0.2);">🚀</div>
+          <h3 style="color: white;">Get Started</h3>
+          <p style="color: rgba(255,255,255,0.6);">Start talking to your companion. The best way to shape it is simply by telling it what you need.</p>
+          <span class="card-arrow">Start a conversation →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p><!-- COMPANION_FOOTER_TAGLINE (e.g. "Your AI companion — it knows your world AND gets things done.") -->
+          Your AI companion — it knows your world AND gets things done.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Companion</h5>
+        <ul>
+          <!-- COMPANION_FOOTER_LINKS -->
+          <li><a href="#">Chat with Me</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+
+    // Animate on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

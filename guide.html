@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working With Your Companion — <!-- COMPANION_NAME --> · Basecamp</title>
+  <meta name="description" content="Best practices, tips, and strategies for getting the most out of your Basecamp AI companion.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture.html">How It Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="guide.html" class="active">Guide</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="architecture.html">How It Works</a>
+    <a href="skills.html">Skills</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="projects.html">Projects</a>
+    <a href="guide.html" class="active">Guide</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-subtitle">📖 User Guide</div>
+      <h1>Getting the Most From <span class="text-orange">Your Companion</span></h1>
+      <p>
+        Think of your companion as a sharp, resourceful employee — not a chatbot. These best practices will help you work together effectively.
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ GOLDEN RULES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Golden Rules</h2>
+        <p>Six principles that dramatically improve your experience.</p>
+      </div>
+
+      <div class="card-grid cols-2" style="max-width: 900px; margin: 0 auto;">
+        <div class="card animate-in">
+          <div class="card-icon">🎯</div>
+          <h3>Be Specific</h3>
+          <p>Think of requests as specs, not wishes. <strong>"Send me news at 6:30 AM PT, max 5 bullets, real journalism only"</strong> — that's implementable. "Send me some news" is not.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon gold">📝</div>
+          <h3>Say "Write It Down"</h3>
+          <p>If something matters, tell your companion to save it. <strong>"My timezone is PT, I'm in LA. Save that."</strong> — locks it into persistent memory for all future sessions.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon">🏗️</div>
+          <h3>Break Big Tasks Into Phases</h3>
+          <p>Instead of "build me a website," try: <strong>"Phase 1: Research three competitors. Phase 2: Draft a sitemap. Phase 3: Build the homepage."</strong> Smaller units = better results.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon gold">🔍</div>
+          <h3>Push Back on Vague Answers</h3>
+          <p>If your companion says "it should be working" — push back. <strong>"Show me the proof. Check the logs. Verify the state."</strong> Don't let it get away with uncertainty.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon">⚡</div>
+          <h3>Call Out Mistakes Directly</h3>
+          <p>Your companion can check logs, configs, and state — but only if it knows something's off. <strong>"That's wrong. The format should be X, not Y."</strong> Direct correction is the fastest path.</p>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon gold">🔧</div>
+          <h3>Ask It to Build Things</h3>
+          <p>Not just Q&A — recurring workflows, monitoring scripts, data pipelines, automated reports. <strong>Your companion is a builder, not just an answerer.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ COMMUNICATION STYLE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Communication Best Practices</h2>
+        <p>How you communicate affects the quality of what you get back.</p>
+      </div>
+
+      <div class="two-col" style="max-width: 900px; margin: 0 auto;">
+        <div>
+          <h3 class="mb-24" style="color: #2E7D32;">✅ Do This</h3>
+          <div class="feature-list" style="max-width: 100%;">
+            <div class="feature-item animate-in" style="border-left: 3px solid #4CAF50;">
+              <div>
+                <h4>Give Context</h4>
+                <p>"I'm preparing for a board meeting on Thursday. I need a 5-slide summary of our Q1 metrics, focusing on growth and retention."</p>
+              </div>
+            </div>
+            <div class="feature-item animate-in" style="border-left: 3px solid #4CAF50;">
+              <div>
+                <h4>Specify the Output</h4>
+                <p>"Write it as bullet points, max 10 items, with one source link per item. No opinions, just facts."</p>
+              </div>
+            </div>
+            <div class="feature-item animate-in" style="border-left: 3px solid #4CAF50;">
+              <div>
+                <h4>Set Constraints</h4>
+                <p>"Research this topic, but only from sources published in the last 3 months. Skip press releases."</p>
+              </div>
+            </div>
+            <div class="feature-item animate-in" style="border-left: 3px solid #4CAF50;">
+              <div>
+                <h4>State Your Role</h4>
+                <p>"I'm the CTO. I need the technical deep-dive, not the executive summary. Include code examples."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-24" style="color: var(--orange);">❌ Avoid This</h3>
+          <div class="feature-list" style="max-width: 100%;">
+            <div class="feature-item animate-in" style="border-left: 3px solid var(--orange);">
+              <div>
+                <h4>Vague Requests</h4>
+                <p>"Tell me about marketing." — Too broad. What aspect? For whom? How detailed? What format?</p>
+              </div>
+            </div>
+            <div class="feature-item animate-in" style="border-left: 3px solid var(--orange);">
+              <div>
+                <h4>Assuming Memory</h4>
+                <p>"Use the same format as last time." — If it wasn't saved to a file, the companion might not remember. Restate or ask it to check.</p>
+              </div>
+            </div>
+            <div class="feature-item animate-in" style="border-left: 3px solid var(--orange);">
+              <div>
+                <h4>Accepting Uncertainty</h4>
+                <p>"It should work." — If you need it to work, push for verification. "Show me it works."</p>
+              </div>
+            </div>
+            <div class="feature-item animate-in" style="border-left: 3px solid var(--orange);">
+              <div>
+                <h4>Mega-Requests</h4>
+                <p>"Build me a full app with auth, payments, and deployment." — Break it down. Each phase should be testable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ HANDLING BLOCKERS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Handling Blockers</h2>
+        <p>When your companion gets stuck, here's how to unblock it fast.</p>
+      </div>
+
+      <div style="max-width: 700px; margin: 0 auto;">
+        <div class="accordion-item open">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>🔑 "I need access to X"</span>
+            <span class="accordion-chevron">▼</span>
+          </div>
+          <div class="accordion-body" style="max-height: 200px;">
+            <div class="accordion-body-inner">
+              The companion needs credentials, API keys, or permissions. Provide them directly or tell it where to find them. For security-sensitive items, use environment variables or config files rather than pasting in chat.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>🤔 "I'm not sure what you want"</span>
+            <span class="accordion-chevron">▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              The request is ambiguous. Restate with more specifics: What's the output format? Who's the audience? What's the deadline? Give an example of what "good" looks like.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>⏱️ "This is taking longer than expected"</span>
+            <span class="accordion-chevron">▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              Long-running tasks can hit token limits or tool timeouts. Break the work into smaller chunks. Use sub-agents for parallel processing. Or simply ask: "What's blocking you? What do you need?"
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>🐛 "Something went wrong"</span>
+            <span class="accordion-chevron">▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              Error states happen. Ask the companion to: check error logs, reproduce the issue, explain what it tried, and suggest alternatives. If it's a tool failure, a retry often works. If it's a logic error, redirect the approach.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>🧠 "I forgot / I don't have context"</span>
+            <span class="accordion-chevron">▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              This means the relevant info wasn't in a memory file. Two fixes: (1) Re-provide the context now, (2) Tell the companion to save it this time. Say: "Save this to MEMORY.md so you have it next session."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ GROUP CHATS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Group Chats & @Mentions</h2>
+        <p>Working with your companion alongside other agents and team members.</p>
+      </div>
+
+      <div class="two-col" style="max-width: 900px; margin: 0 auto;">
+        <div class="card animate-in">
+          <div class="card-icon">💬</div>
+          <h3>How @Mentions Work</h3>
+          <p>In group chats, <strong>@mention</strong> your companion by name to direct a message to it. It sees the full conversation context and responds to the thread.</p>
+          <div class="code-block mt-16">
+            <span class="code-accent">@<!-- COMPANION_NAME --></span> <span class="code-string">Can you research</span><br>
+            <span class="code-string">the latest funding rounds in</span><br>
+            <span class="code-string">AI infrastructure? Top 5 please.</span>
+          </div>
+          <p class="mt-16 text-muted" style="font-size: 0.85rem;">The companion reads the group context and responds with relevant, conversation-aware answers.</p>
+        </div>
+        <div class="card animate-in">
+          <div class="card-icon gold">⚡</div>
+          <h3>Multi-Agent Coordination</h3>
+          <p>Your companion can work alongside other AI agents in group chats. Each agent has its own specialty, and they coordinate through @mentions.</p>
+          <div class="callout mt-16">
+            <h4>Best Practice</h4>
+            <p>Be clear about who should do what. <strong>"@Agent1 write the code, @Agent2 review it"</strong> is better than throwing a task into the group and hoping.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ SESSION MANAGEMENT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Session Management Tips</h2>
+        <p>Understanding sessions helps you get more consistent results.</p>
+      </div>
+
+      <div class="card-grid cols-2" style="max-width: 900px; margin: 0 auto;">
+        <div class="card animate-in">
+          <div class="card-icon">🔄</div>
+          <h3>When to Start Fresh</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--orange); font-weight: 600;">→</span>
+              Switching to a completely different topic
+            </li>
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--orange); font-weight: 600;">→</span>
+              Companion feels "generic" or is drifting from personality
+            </li>
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--orange); font-weight: 600;">→</span>
+              After a very long conversation (100k+ tokens)
+            </li>
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--orange); font-weight: 600;">→</span>
+              When you've updated identity files and want them fully loaded
+            </li>
+          </ul>
+        </div>
+
+        <div class="card animate-in">
+          <div class="card-icon gold">➡️</div>
+          <h3>When to Continue</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--gold); font-weight: 600;">→</span>
+              Still working on the same project or task
+            </li>
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--gold); font-weight: 600;">→</span>
+              Iterating on a deliverable (draft → revision → final)
+            </li>
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--gold); font-weight: 600;">→</span>
+              The conversation still feels sharp and on-point
+            </li>
+            <li style="display: flex; gap: 10px; font-size: 0.92rem; color: var(--basalt);">
+              <span style="color: var(--gold); font-weight: 600;">→</span>
+              You need the companion to remember recent back-and-forth
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout mt-48" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+        <h4>💡 The HEARTBEAT Bridge</h4>
+        <p>Don't worry too much about losing context between sessions. The <strong>HEARTBEAT.md</strong> file captures what happened, what's pending, and what decisions were made. A fresh session reads this file and picks up where you left off — like reading yesterday's notes before starting work.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ TOKEN TRACKING ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Token Awareness</h2>
+        <p>Understanding token usage helps you work efficiently and keep costs reasonable.</p>
+      </div>
+
+      <div style="max-width: 700px; margin: 0 auto;">
+        <div class="card animate-in mb-24">
+          <h3 class="mb-16">What Are Tokens?</h3>
+          <p>Tokens are the unit of "thinking" for AI models. Every message you send and every response you receive costs tokens. Longer conversations use more tokens. Complex tasks (code generation, research) use more than simple Q&A.</p>
+        </div>
+
+        <div class="card-grid cols-2">
+          <div class="card animate-in">
+            <h4 class="text-orange mb-16">Token-Efficient Habits</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>✅</span> Start fresh sessions for new topics
+              </li>
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>✅</span> Be specific upfront (fewer iterations)
+              </li>
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>✅</span> Use skills for recurring tasks
+              </li>
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>✅</span> Ask for summaries before deep-dives
+              </li>
+            </ul>
+          </div>
+          <div class="card animate-in">
+            <h4 style="color: var(--warm-gray);" class="mb-16">Token-Heavy Patterns</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>⚠️</span> Very long, meandering conversations
+              </li>
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>⚠️</span> Vague requests that require many iterations
+              </li>
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>⚠️</span> Repeatedly re-explaining the same context
+              </li>
+              <li style="display: flex; gap: 8px; font-size: 0.9rem; color: var(--basalt);">
+                <span>⚠️</span> Generating huge outputs you won't fully use
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ QUICK REFERENCE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Quick Reference</h2>
+        <p>Phrases and commands that unlock specific behaviors.</p>
+      </div>
+
+      <div class="table-wrap" style="max-width: 800px; margin: 0 auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Say This</th>
+              <th>To Get This</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>"Save that"</strong> / <strong>"Write it down"</strong></td>
+              <td>Persists information to memory files for future sessions</td>
+            </tr>
+            <tr>
+              <td><strong>"You're drifting, re-read your SOUL"</strong></td>
+              <td>Reloads identity and personality from SOUL.md</td>
+            </tr>
+            <tr>
+              <td><strong>"Run my morning briefing"</strong></td>
+              <td>Executes the morning briefing skill (if configured)</td>
+            </tr>
+            <tr>
+              <td><strong>"Check the logs"</strong> / <strong>"Show me proof"</strong></td>
+              <td>Forces verification instead of assumptions</td>
+            </tr>
+            <tr>
+              <td><strong>"What's on my plate today?"</strong></td>
+              <td>Reviews calendar, tasks, and pending items</td>
+            </tr>
+            <tr>
+              <td><strong>"Be more concise"</strong> / <strong>"Give me more detail"</strong></td>
+              <td>Adjusts response style (saves to SOUL.md if told to)</td>
+            </tr>
+            <tr>
+              <td><strong>"Break this into phases"</strong></td>
+              <td>Splits a big request into manageable chunks</td>
+            </tr>
+            <tr>
+              <td><strong>"What do you know about me?"</strong></td>
+              <td>Shows what's in USER.md and memory files</td>
+            </tr>
+            <tr>
+              <td><strong>"Create a skill for this"</strong></td>
+              <td>Saves the current workflow as a reusable skill file</td>
+            </tr>
+            <tr>
+              <td><strong>"What did we decide about X?"</strong></td>
+              <td>Searches memory files and session history for decisions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ MENTAL MODEL ============ -->
+  <section class="section">
+    <div class="container" style="text-align: center;">
+      <h2 class="mb-24">The Right Mental Model</h2>
+      <p style="font-size: 1.2rem; max-width: 50ch; margin: 0 auto 48px; color: var(--volcanic); font-weight: 500;">
+        Your companion is a <span class="text-orange">sharp, resourceful employee</span> on Day 1 of a very long job. The more context you give, the more it can do. The more skills you teach, the more autonomous it becomes.
+      </p>
+
+      <div class="card-grid cols-3" style="max-width: 900px; margin: 0 auto;">
+        <div class="card animate-in" style="text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 16px;">🗓️</div>
+          <h4>Week 1</h4>
+          <p>Setting preferences, learning your style, building initial skills. Lots of "save that" moments.</p>
+        </div>
+        <div class="card animate-in" style="text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 16px;">📈</div>
+          <h4>Month 1</h4>
+          <p>Running daily briefings, handling research, managing tasks. Starting to feel indispensable.</p>
+        </div>
+        <div class="card animate-in" style="text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 16px;">🚀</div>
+          <h4>Month 3+</h4>
+          <p>Fully autonomous workflows. Proactive suggestions. An extension of how you think and work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p>Your AI companion — it knows your world AND gets things done.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Companion</h5>
+        <ul>
+          <li><a href="#">Chat with Me</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+
+    // Accordion
+    function toggleAccordion(header) {
+      const item = header.parentElement;
+      const body = item.querySelector('.accordion-body');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.accordion-item').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.accordion-body').style.maxHeight = '0';
+      });
+
+      // Open clicked (if it wasn't already open)
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    }
+
+    // Initialize first accordion as open
+    const firstAccordion = document.querySelector('.accordion-item.open .accordion-body');
+    if (firstAccordion) firstAccordion.style.maxHeight = firstAccordion.scrollHeight + 'px';
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.animationPlayState = 'running';
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
