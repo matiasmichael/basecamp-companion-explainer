@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Managed by Basecamp — Basecamp Companion</title>
+  <meta name="description" content="What it means to have a managed AI companion — security, updates, human oversight, and continuous improvement by the Basecamp team.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏕️</text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="companion-emoji">🏕️</span>
+        <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="managed.html" class="active">Managed by Basecamp</a></li>
+        <li><a href="architecture.html">How It Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="guide.html">Working Together</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="managed.html" class="active">Managed by Basecamp</a>
+    <a href="architecture.html">How It Works</a>
+    <a href="skills.html">Skills</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="guide.html">Working Together</a>
+    <a href="projects.html">Projects</a>
+  </div>
+  <div class="page-top"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-subtitle">🛡️ Managed by Basecamp</div>
+      <h1>Your Companion Is <span class="text-orange">Actively Maintained</span></h1>
+      <p>
+        A Basecamp companion isn't a product you install and figure out on your own. The Basecamp team runs the infrastructure, manages security, and continuously improves how companions work. Here's what that means in practice.
+      </p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHY MANAGED MATTERS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why "Managed" Matters</h2>
+        <p>Three things that are different about a managed companion versus using an AI API directly.</p>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-item animate-in">
+          <div class="feature-icon">🖥️</div>
+          <div>
+            <h4>Dedicated Infrastructure</h4>
+            <p>Your companion runs on its own infrastructure — not a shared API endpoint. It has its own workspace, its own files, its own persistent state. Nothing is shared with other users.</p>
+          </div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon">👥</div>
+          <div>
+            <h4>Active Management</h4>
+            <p>The Basecamp team monitors, updates, and improves companions on an ongoing basis. When something can work better, we fix it — you don't have to file a ticket or wait for a release cycle.</p>
+          </div>
+        </div>
+        <div class="feature-item animate-in">
+          <div class="feature-icon">🤝</div>
+          <div>
+            <h4>Relationship, Not Transaction</h4>
+            <p>We treat each companion as a long-term relationship, not a subscription. The goal is a companion that genuinely gets better at working with you over time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHAT MANAGED MEANS IN PRACTICE ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What "Managed" Means in Practice</h2>
+        <p>Concrete things the Basecamp team does to keep your companion running well.</p>
+      </div>
+
+      <div class="managed-grid">
+        <div class="managed-card animate-in">
+          <div class="managed-icon">🔒</div>
+          <h3>Security Layer</h3>
+          <p>We add security on top of the base AI model. This includes monitoring for PII leaks, data protection measures, and safe web browsing through privacy-respecting search engines (DuckDuckGo, no tracking). Your data stays yours.</p>
+        </div>
+        <div class="managed-card animate-in">
+          <div class="managed-icon">📋</div>
+          <h3>Regular Skill Updates</h3>
+          <p>We continuously build and refine Skills — reusable instruction sets that companions follow. When one companion hits a problem with a workflow, we fix the underlying Skill for all companions. The knowledge base grows over time.</p>
+        </div>
+        <div class="managed-card animate-in">
+          <div class="managed-icon">🎯</div>
+          <h3>Behavioral Refinement</h3>
+          <p>We analyze how companions interact and continuously improve their behavior — answer quality, communication style, reliability, edge case handling. This isn't automated tuning; it's deliberate improvement by people who read the outputs.</p>
+        </div>
+        <div class="managed-card animate-in">
+          <div class="managed-icon">⚙️</div>
+          <h3>Infrastructure Updates</h3>
+          <p>We keep the AI engine updated, handle scaling, ensure uptime, and manage the underlying systems. When new model versions or capabilities become available, we evaluate, test, and roll them out.</p>
+        </div>
+        <div class="managed-card animate-in">
+          <div class="managed-icon">👁️</div>
+          <h3>Human Oversight</h3>
+          <p>Real people on the Basecamp team review and improve the system regularly. This isn't a set-and-forget product. There are humans behind it who care whether it's working well for you.</p>
+        </div>
+        <div class="managed-card animate-in">
+          <div class="managed-icon">🔄</div>
+          <h3>Continuous Improvement</h3>
+          <p>Companions get better over time — not just through your interactions, but through improvements we make to the platform itself. New skills, better defaults, smarter handling of common tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ THE COMPANION PHILOSOPHY ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="philosophy-block">
+        <h3>The Companion Philosophy</h3>
+        <p>We use the word <span class="highlight">"companion"</span> deliberately, not "agent" or "assistant." The distinction matters.</p>
+        <p>An agent executes tasks. You give it instructions, it follows them. That's useful, but it's transactional. A companion does that too — but it also <span class="highlight">understands context</span>, remembers your preferences, learns your working style, and grows with you over time.</p>
+        <p>Your companion has <span class="highlight">memory files that persist forever</span>. It never forgets what you told it — not because it stores data in a vector database, but because it maintains actual readable documents about you, your projects, and your decisions.</p>
+        <p>It has a <span class="highlight">SOUL file</span> that shapes its personality and communication style. You can talk to your companion about how you want it to behave, and it will update its own SOUL file accordingly. Over time, it becomes uniquely yours.</p>
+        <p>This is the difference between a tool you use and a partner you work with.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHAT THIS ISN'T ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What This Isn't</h2>
+        <p>To set expectations clearly.</p>
+      </div>
+
+      <ul class="not-list">
+        <li class="animate-in">
+          <span class="not-icon">✕</span>
+          <div>
+            <strong>This isn't ChatGPT with a skin.</strong>
+            <p>ChatGPT starts fresh every conversation (or approximates memory with summaries). A Basecamp companion has real persistent files, a real workspace, and real tools it can execute. The architecture is fundamentally different.</p>
+          </div>
+        </li>
+        <li class="animate-in">
+          <span class="not-icon">✕</span>
+          <div>
+            <strong>This isn't a chatbot.</strong>
+            <p>Chatbots answer questions. A companion researches, writes, executes code, manages projects, sends emails, browses the web, and remembers everything. It does real work on real systems.</p>
+          </div>
+        </li>
+        <li class="animate-in">
+          <span class="not-icon">✕</span>
+          <div>
+            <strong>This isn't self-service software.</strong>
+            <p>You don't install it, configure it, and troubleshoot it yourself. The Basecamp team sets it up, maintains it, and improves it. You just use it.</p>
+          </div>
+        </li>
+        <li class="animate-in">
+          <span class="not-icon">✕</span>
+          <div>
+            <strong>This isn't set-and-forget.</strong>
+            <p>A dedicated AI system runs 24/7 on your behalf, with people behind it making sure it keeps getting better. Your companion from today will be meaningfully better in three months — not because you did anything, but because we did.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CTA SECTION ============ -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Want to Try It?</h2>
+      <p>Companions are set up individually. If you're interested, reach out to Michael — he'll walk you through how it works and get you started.</p>
+      <a href="mailto:michael@getclarity.ai?subject=Basecamp%20Companion" class="btn btn-primary">Talk to Michael</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
+        <p>A persistent AI companion — it knows your world and gets things done.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="managed.html">Managed by Basecamp</a></li>
+          <li><a href="architecture.html">How It Works</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="guide.html">Working Together</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:michael@getclarity.ai">michael@getclarity.ai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span>2025 · Built with 🧡</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-hamburger').classList.remove('open');
+        document.getElementById('mobileNav').classList.remove('open');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate-in').forEach(el => {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

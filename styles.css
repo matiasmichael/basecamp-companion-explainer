@@ -1040,6 +1040,213 @@ tbody tr:hover {
   }
 }
 
+/* --- CTA Section (pre-footer) --- */
+.cta-section {
+  background: var(--volcanic);
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section h2 {
+  color: white;
+  margin-bottom: 16px;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 auto 28px;
+  max-width: 50ch;
+  font-size: 0.98rem;
+}
+
+.cta-section .btn-primary {
+  font-size: 0.95rem;
+  padding: 14px 28px;
+}
+
+/* --- Day Timeline --- */
+.day-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 60px;
+}
+
+.day-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--orange), var(--gold), var(--warm-gray-light));
+}
+
+.day-item {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  position: relative;
+}
+
+.day-item::before {
+  content: '';
+  position: absolute;
+  left: -42px;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: 3px solid var(--cream);
+}
+
+.day-item:nth-child(even)::before {
+  background: var(--gold);
+}
+
+.day-time {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--orange);
+  min-width: 60px;
+  padding-top: 2px;
+}
+
+.day-content h4 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.day-content p {
+  font-size: 0.9rem;
+  color: var(--basalt);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .day-timeline {
+    padding-left: 40px;
+  }
+  .day-timeline::before {
+    left: 14px;
+  }
+  .day-item::before {
+    left: -32px;
+  }
+  .day-time {
+    min-width: 50px;
+    font-size: 0.8rem;
+  }
+}
+
+/* --- Managed Page Specifics --- */
+.managed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .managed-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.managed-card {
+  background: var(--card-bg);
+  border: 1px solid var(--warm-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: all var(--transition);
+}
+
+.managed-card:hover {
+  box-shadow: 0 8px 32px var(--warm-shadow);
+  border-color: rgba(232, 115, 44, 0.15);
+}
+
+.managed-card .managed-icon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.managed-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+.managed-card p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+/* Philosophy section */
+.philosophy-block {
+  background: var(--volcanic);
+  border-radius: var(--radius);
+  padding: 48px;
+  color: white;
+  margin: 48px 0;
+}
+
+.philosophy-block h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.philosophy-block p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 65ch;
+}
+
+.philosophy-block p + p {
+  margin-top: 16px;
+}
+
+.philosophy-block .highlight {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+/* Not-getting section */
+.not-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.not-list li {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--warm-border);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.not-list li:last-child {
+  border-bottom: none;
+}
+
+.not-icon {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  padding-top: 2px;
+}
+
+
 /* --- Animations --- */
 @keyframes fadeInUp {
   from {

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><!-- COMPANION_NAME --> — Basecamp Companion</title>
-  <meta name="description" content="Meet <!-- COMPANION_NAME -->, your Basecamp AI companion. It knows your world AND gets things done.">
+  <title>Basecamp Companion</title>
+  <meta name="description" content="A persistent AI companion that knows your world and gets things done. Managed by the Basecamp team.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'><!-- COMPANION_EMOJI --></text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏕️</text></svg>">
 </head>
 <body>
 
@@ -14,16 +14,17 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
-        <span class="companion-emoji"><!-- COMPANION_EMOJI --></span>
+        <span class="companion-emoji">🏕️</span>
         <span class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></span>
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="managed.html">Managed by Basecamp</a></li>
         <li><a href="architecture.html">How It Works</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="guide.html">Working Together</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="guide.html">Guide</a></li>
       </ul>
       <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -32,57 +33,42 @@
   </nav>
   <div class="nav-mobile" id="mobileNav">
     <a href="index.html" class="active">Home</a>
+    <a href="managed.html">Managed by Basecamp</a>
     <a href="architecture.html">How It Works</a>
     <a href="skills.html">Skills</a>
     <a href="capabilities.html">Capabilities</a>
+    <a href="guide.html">Working Together</a>
     <a href="projects.html">Projects</a>
-    <a href="guide.html">Guide</a>
   </div>
   <div class="page-top"></div>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">
-        <span class="status-dot"></span>
-        <!-- COMPANION_STATUS (e.g. "Online & Operational") -->
-        Online & Operational
-      </div>
-      <h1>Meet <!-- COMPANION_NAME --></h1>
+      <h1>This Is a <span class="wordmark" style="font-size: inherit; letter-spacing: inherit;"><span class="word-base">Base</span><span class="word-camp">camp</span></span> Companion</h1>
       <p>
-        <!-- COMPANION_TAGLINE (e.g. "A persistent AI companion with a workspace, tools, and memory — built to work alongside you every day.") -->
-        A persistent AI companion with a workspace, tools, and memory — built to work alongside you every day.
+        A persistent AI that runs 24/7 on dedicated infrastructure. It has its own memory, its own identity, and access to real tools. The Basecamp team manages it — keeps it updated, secure, and improving. You just talk to it.
       </p>
       <div class="hero-subtitle">
-        <!-- COMPANION_EMOJI --> <!-- COMPANION_ROLE (e.g. "AI Companion on Basecamp") -->
-        🤖 AI Companion on Basecamp
+        Companion, not chatbot. Being + Doing.
       </div>
 
-      <!-- CUSTOMIZABLE STATS -->
       <div class="stats-row mt-48">
         <div class="stat animate-in">
-          <!-- STAT_1_VALUE -->
           <div class="stat-value">∞</div>
-          <!-- STAT_1_LABEL -->
           <div class="stat-label">Persistent Memory</div>
         </div>
         <div class="stat animate-in">
-          <!-- STAT_2_VALUE -->
           <div class="stat-value">24/7</div>
-          <!-- STAT_2_LABEL -->
-          <div class="stat-label">Always Available</div>
+          <div class="stat-label">Always Running</div>
         </div>
         <div class="stat animate-in">
-          <!-- STAT_3_VALUE -->
           <div class="stat-value">700+</div>
-          <!-- STAT_3_LABEL -->
-          <div class="stat-label">Skills Available</div>
+          <div class="stat-label">Available Skills</div>
         </div>
         <div class="stat animate-in">
-          <!-- STAT_4_VALUE -->
-          <div class="stat-value">File-Based</div>
-          <!-- STAT_4_LABEL -->
-          <div class="stat-label">Memory System</div>
+          <div class="stat-value">Managed</div>
+          <div class="stat-label">By Real Humans</div>
         </div>
       </div>
     </div>
@@ -90,31 +76,31 @@
 
   <hr class="section-divider">
 
-  <!-- ============ BEING + DOING ============ -->
+  <!-- ============ COMPANION vs AGENT ============ -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Not Just a Chatbot. Not Just a Tool.</h2>
-        <p>Every other AI product is either "being" (companionship) or "doing" (tasks). Your Basecamp companion combines both.</p>
+        <h2>Companion, Not Agent</h2>
+        <p>Most AI products do one of two things: chat (being) or execute tasks (doing). A Basecamp companion does both.</p>
       </div>
 
       <div class="two-col">
         <div class="card animate-in">
           <div class="card-icon">🧠</div>
           <h3>The "Being" Side</h3>
-          <p>Your companion knows your soul. It remembers your preferences, your communication style, your goals, your quirks. It builds a persistent understanding of who you are — not from a database, but from real conversations written to real files.</p>
+          <p>Your companion remembers everything. Not in a database — in actual files it reads at the start of every conversation. Your preferences, communication style, ongoing projects, decisions you've made, context from last week or last month.</p>
           <div class="callout mt-24">
-            <h4>💡 Key Insight</h4>
-            <p>The companion doesn't just store facts about you — it develops a working model of how you think, what you value, and how you like things done.</p>
+            <h4>How It Works</h4>
+            <p>A SOUL file defines the companion's personality. A USER file captures who you are and how you work. MEMORY files accumulate over time. These aren't prompts — they're persistent documents the companion maintains itself.</p>
           </div>
         </div>
         <div class="card animate-in">
           <div class="card-icon" style="background: var(--gold-light);">⚡</div>
           <h3>The "Doing" Side</h3>
-          <p>Your companion gets things done. It searches the web, writes code, manages files, sends messages, schedules tasks, connects to your tools. It's a sharp, resourceful employee — not a suggestion engine.</p>
+          <p>Your companion has access to real tools: web search, code execution, file management, email, calendar, messaging, browser automation. It doesn't suggest actions — it performs them.</p>
           <div class="callout-gold callout mt-24">
-            <h4>🎯 The Magic</h4>
-            <p>It knows your soul AND orders your flowers. Context-aware action is what separates a companion from a chatbot.</p>
+            <h4>Why Both Matter</h4>
+            <p>Because it knows your context, the actions it takes are relevant. It doesn't just send an email — it sends the right email, in your voice, to the right person, because it knows the project history.</p>
           </div>
         </div>
       </div>
@@ -123,37 +109,94 @@
 
   <hr class="section-divider">
 
-  <!-- ============ HOW IT'S DIFFERENT ============ -->
+  <!-- ============ A TYPICAL DAY ============ -->
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>What Makes This Different</h2>
-        <p>A quick look at the architecture that makes Basecamp companions uniquely powerful.</p>
+        <h2>What a Day Looks Like</h2>
+        <p>A companion isn't something you open when you need help. It's running alongside you, all day.</p>
+      </div>
+
+      <div class="day-timeline">
+        <div class="day-item animate-in">
+          <div class="day-time">7:30 AM</div>
+          <div class="day-content">
+            <h4>Morning Briefing</h4>
+            <p>Your companion reviews overnight emails, Slack messages, and calendar. It summarizes what matters and flags anything that needs your attention before your first meeting.</p>
+          </div>
+        </div>
+        <div class="day-item animate-in">
+          <div class="day-time">9:00 AM</div>
+          <div class="day-content">
+            <h4>Research Task</h4>
+            <p>You ask it to research a potential partner company. It searches the web, reads their site, checks recent news, and puts together a brief — cited, structured, ready for your review.</p>
+          </div>
+        </div>
+        <div class="day-item animate-in">
+          <div class="day-time">11:30 AM</div>
+          <div class="day-content">
+            <h4>Email Drafting</h4>
+            <p>Three emails to investors need to go out. You give it the key points; it writes the drafts in your voice — because it's read dozens of your previous emails and knows how you communicate.</p>
+          </div>
+        </div>
+        <div class="day-item animate-in">
+          <div class="day-time">2:00 PM</div>
+          <div class="day-content">
+            <h4>Project Tracking</h4>
+            <p>Your companion updates the project board, checks in on blocked tasks, and reminds you about a deliverable due tomorrow you'd forgotten about.</p>
+          </div>
+        </div>
+        <div class="day-item animate-in">
+          <div class="day-time">4:30 PM</div>
+          <div class="day-content">
+            <h4>Creative Collaboration</h4>
+            <p>You're reworking a pitch deck. You brainstorm with the companion, iterate on positioning, and it builds a first draft of the new slides structure while you're on another call.</p>
+          </div>
+        </div>
+        <div class="day-item animate-in">
+          <div class="day-time">7:00 PM</div>
+          <div class="day-content">
+            <h4>End of Day</h4>
+            <p>It logs everything to memory — decisions made, tasks completed, open threads. Tomorrow morning, it picks up exactly where you left off.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ============ WHAT MAKES IT DIFFERENT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Key Differences</h2>
+        <p>What separates a Basecamp companion from other AI tools.</p>
       </div>
 
       <div class="flow-steps">
         <div class="flow-step animate-in">
           <div class="flow-step-number">1</div>
           <h4>Persistent Memory</h4>
-          <p>File-based, infinite, searchable. Your preferences and context survive across every session.</p>
+          <p>File-based, infinite, searchable. Your context survives across every session — nothing is ever forgotten.</p>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step animate-in">
           <div class="flow-step-number">2</div>
           <h4>Identity Files</h4>
-          <p>SOUL.md, IDENTITY.md, USER.md — files that define who the companion is and who it serves.</p>
+          <p>SOUL.md defines personality. IDENTITY.md defines role. USER.md captures who you are. These are real documents, not hidden prompts.</p>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step animate-in">
           <div class="flow-step-number">3</div>
           <h4>Real Tools</h4>
-          <p>Shell, browser, web search, APIs, scheduling. Not simulated — actually executed.</p>
+          <p>Shell, browser, web search, APIs, scheduling — actually executed on real infrastructure, not simulated.</p>
         </div>
         <div class="flow-arrow">→</div>
         <div class="flow-step animate-in">
           <div class="flow-step-number">4</div>
-          <h4>Learnable Skills</h4>
-          <p>Teach it once, it remembers forever. Skills are SOPs that actually get followed.</p>
+          <h4>Managed Service</h4>
+          <p>The Basecamp team actively maintains your companion — security, skills, updates, and behavioral improvements.</p>
         </div>
       </div>
     </div>
@@ -165,48 +208,57 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Explore</h2>
-        <p>Dive deeper into how your companion works, what it can do, and how to get the most out of it.</p>
+        <h2>Learn More</h2>
+        <p>Each page covers a different aspect of how companions work.</p>
       </div>
 
       <div class="card-grid cols-3">
+        <a href="managed.html" class="card animate-in">
+          <div class="card-icon">🛡️</div>
+          <h3>Managed by Basecamp</h3>
+          <p>What "managed" means in practice — security, updates, human oversight, and the companion philosophy.</p>
+          <span class="card-arrow">Learn more →</span>
+        </a>
         <a href="architecture.html" class="card animate-in">
-          <div class="card-icon">🏗️</div>
+          <div class="card-icon gold">🏗️</div>
           <h3>How It Works</h3>
-          <p>Memory system, context windows, identity files, and the architecture that makes it all click.</p>
+          <p>Memory system, context windows, identity files, and the architecture behind the scenes.</p>
           <span class="card-arrow">Learn more →</span>
         </a>
         <a href="skills.html" class="card animate-in">
-          <div class="card-icon gold">📋</div>
+          <div class="card-icon">📋</div>
           <h3>Skills</h3>
-          <p>Reusable instruction sets — SOPs that actually get followed. Teach once, executed every time.</p>
+          <p>Reusable instruction sets — teach a workflow once, and the companion executes it consistently every time.</p>
           <span class="card-arrow">Explore skills →</span>
         </a>
         <a href="capabilities.html" class="card animate-in">
-          <div class="card-icon">🔌</div>
+          <div class="card-icon gold">🔌</div>
           <h3>Capabilities</h3>
-          <p>Web search, code execution, browser automation, messaging, and all the integrations available.</p>
+          <p>Web search, code execution, browser automation, messaging, and 700+ integrations.</p>
           <span class="card-arrow">See capabilities →</span>
-        </a>
-        <a href="projects.html" class="card animate-in">
-          <div class="card-icon gold">📊</div>
-          <h3>Projects & Tasks</h3>
-          <p>Active projects, timelines, open loops, and completed work — all in one dashboard.</p>
-          <span class="card-arrow">View projects →</span>
         </a>
         <a href="guide.html" class="card animate-in">
           <div class="card-icon">📖</div>
           <h3>Working Together</h3>
-          <p>Best practices, tips, and strategies for getting the most out of your AI companion.</p>
+          <p>How to get the most out of a companion — best practices, tips, and patterns that work well.</p>
           <span class="card-arrow">Read the guide →</span>
         </a>
-        <div class="card animate-in" style="background: var(--volcanic); border-color: transparent;">
-          <div class="card-icon" style="background: rgba(232, 115, 44, 0.2);">🚀</div>
-          <h3 style="color: white;">Get Started</h3>
-          <p style="color: rgba(255,255,255,0.6);">Start talking to your companion. The best way to shape it is simply by telling it what you need.</p>
-          <span class="card-arrow">Start a conversation →</span>
-        </div>
+        <a href="projects.html" class="card animate-in">
+          <div class="card-icon gold">📊</div>
+          <h3>Projects & Tasks</h3>
+          <p>How companions track projects, manage tasks, and keep work moving forward.</p>
+          <span class="card-arrow">View projects →</span>
+        </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA SECTION ============ -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Want to Try It?</h2>
+      <p>Companions are set up individually. If you're interested, reach out to Michael — he'll walk you through how it works and get you started.</p>
+      <a href="mailto:michael@getclarity.ai?subject=Basecamp%20Companion" class="btn btn-primary">Talk to Michael</a>
     </div>
   </section>
 
@@ -215,34 +267,30 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="wordmark"><span class="word-base">Base</span><span class="word-camp">camp</span></div>
-        <p><!-- COMPANION_FOOTER_TAGLINE (e.g. "Your AI companion — it knows your world AND gets things done.") -->
-          Your AI companion — it knows your world AND gets things done.
-        </p>
+        <p>A persistent AI companion — it knows your world and gets things done.</p>
       </div>
       <div class="footer-links">
         <h5>Pages</h5>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="managed.html">Managed by Basecamp</a></li>
           <li><a href="architecture.html">How It Works</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="guide.html">Working Together</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="guide.html">Guide</a></li>
         </ul>
       </div>
       <div class="footer-links">
-        <h5>Companion</h5>
+        <h5>Contact</h5>
         <ul>
-          <!-- COMPANION_FOOTER_LINKS -->
-          <li><a href="#">Chat with Me</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Status</a></li>
+          <li><a href="mailto:michael@getclarity.ai">michael@getclarity.ai</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span><!-- COMPANION_NAME --> · Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
-      <span><!-- COMPANION_YEAR --> · Built with 🧡</span>
+      <span>Powered by <span class="wordmark" style="font-size: 0.82rem;"><span class="word-base">Base</span><span class="word-camp">camp</span></span></span>
+      <span>2025 · Built with 🧡</span>
     </div>
   </footer>
 
@@ -252,7 +300,6 @@
       document.getElementById('mobileNav').classList.toggle('open');
     }
 
-    // Close mobile menu on link click
     document.querySelectorAll('.nav-mobile a').forEach(link => {
       link.addEventListener('click', () => {
         document.querySelector('.nav-hamburger').classList.remove('open');
@@ -260,7 +307,6 @@
       });
     });
 
-    // Animate on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
